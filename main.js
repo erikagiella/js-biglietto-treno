@@ -24,13 +24,17 @@
 
 // Procedimento:
 
-//creo le variabili in cui metterò km, età, prezzo a km e risultato
+//creo le variabili in cui metterò prezzo a km e risultato
+const prezzoAlChilometro = 0.21;
+let risultato;
 
-//chiedo all'utente la quantità di km
-
-//chiedo all'utente l'età del passeggero
-
+//chiedo all'utente la quantità di km e la assegno alla relativa variabile
+const chilometriDaPercorrere = prompt('Quanti km vuoi percorrere?');
+//chiedo all'utente l'età del passeggero e la assegno alla relativa variabile
+const etàPasseggero = prompt('Qual è l età del passeggero?');
 //calcolo il prezzo del biglietto
+risultato = chilometriDaPercorrere * prezzoAlChilometro;
+
 
 //IF/ELSE IF/ELSE
 
@@ -40,6 +44,6 @@
 
 //stampo il risultato con due cifre decimali
 
-
+console.log(risultato)
 
 
