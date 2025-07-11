@@ -13,3 +13,33 @@
 // 100km, 10 anni => prezzo corretto:  €16.80,
 // 100km, 70 anni => prezzo corretto: €12.60
 
+/* Tools:
+- const/let (per km, età, prezzo a km, risultato)
+- prompt (per km ed età)
+- if/else if/else  (per calcolo biglietto)
+- console.log (per stampa risultato)
+- metodo ToFixed () (per arrotondamento risultato a 2 decimali)
+*/
+
+
+// Procedimento:
+
+//creo le variabili in cui metterò km, età, prezzo a km e risultato
+
+//chiedo all'utente la quantità di km
+
+//chiedo all'utente l'età del passeggero
+
+//calcolo il prezzo del biglietto
+
+//IF/ELSE IF/ELSE
+
+// SE il passeggero ha meno di 18 anni, al risultato verrà scontato il 20%
+
+// ALTRIMENTI SE il passeggero ha più di 65 anni, al risultato verrà scontato il 40%
+
+//stampo il risultato con due cifre decimali
+
+
+
+
