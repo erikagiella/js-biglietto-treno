@@ -5,6 +5,7 @@ const prezzoAlChilometro = 0.21;
 const scontoUnder18 = prezzoAlChilometro * 0.2;
 const scontoOver65 = prezzoAlChilometro * 0.4;
 let costoBiglietto;
+let tariffa = "Ordinaria";
 
 
 //chiedo all'utente la quantità di km e la assegno alla relativa variabile
@@ -17,16 +18,18 @@ costoBiglietto = chilometriDaPercorrere * prezzoAlChilometro;
 // SE il passeggero ha meno di 18 anni, al risultato verrà scontato il 20%
 if (etàPasseggero < 18) {
     costoBiglietto = costoBiglietto - scontoUnder18;
+    tariffa = "Under 18";
 }
 
 // ALTRIMENTI SE il passeggero ha più di 65 anni, al risultato verrà scontato il 40%
 else if (etàPasseggero > 65) {
     costoBiglietto = costoBiglietto - scontoOver65;
+    tariffa = "Over 65"
 } else {
-    // else superfluo in quanto negli altri casi il costo già calcolato resta invariato
+    // else superfluo in quanto negli altri casi il costo già calcolato e la tariffa restano invariati
 }
 
 //stampo il risultato con due cifre decimali
-console.log(`Il biglietto per percorrere ${chilometriDaPercorrere} km per un passeggero di ${etàPasseggero} anni è di ${costoBiglietto.toFixed(2)} euro`)
+console.log(`Il biglietto per percorrere ${chilometriDaPercorrere} km per un passeggero di ${etàPasseggero} anni è di ${costoBiglietto.toFixed(2)} euro applicando la tariffa ${tariffa}`)
 
 
